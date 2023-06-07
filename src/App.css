@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  
+  background-color: rgb(4, 4, 4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg{
+  background-image: linear-gradient( 45deg ,#7462ff ,rgb(145, 149, 144) , #d61dcd ,#d2001a , #23d5ab);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite; 
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+h1{
+  color:transparent;
+  font-size: 4vw;
+ 
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+}
+h1::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 0;
+  height: 20%;
+  color: #23d5ab;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #23d5ab ;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%{
+    width: 0%;
+  }
+  70%{
+    width: 100%;
+  }
+
+}
+
+.one{
+  top: 10px;
+  padding: 10px;
+  gap: 10px;
+  height: AUTO;
+  width: AUTO;
+  border:none;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.one:hover{
+  border:2px solid #383d52 ;
+}
+
+h5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  border: 2px solid red;
+  border-radius: 50px ;
+  padding: 5px;
+  /* width: 300px; */
+  height: 100px;
+  flex-basis: calc(50% - 10px);
+  margin: 5px0;
+  background-color:rgb(58, 129, 157) ; 
+} 
+.lastBox{
+  padding: 5px;
+  position: absolute;
+  left: 80px;
+  top: 500px;
+  height: auto;
+  width:1350PX;
+  border: 3px solid rgb(209, 216, 68);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+ 
+}
+
+.name{
+  font-weight: bolder;
+
+}
+.name1{
+  font-weight: bolder;
+  border-radius: 50px;
+  width: 250px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+.name1:hover{
+  border: 2px solid black;
+}
+
+.button{
+  font-weight: bolder;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.button:hover{
+  background-color: #09c9f4;
+  border: #09c9f4;
+}
+
+
